@@ -1,0 +1,742 @@
+2019-03-24 02:39:59.608  INFO 79511 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35cabb2a: startup date [Sun Mar 24 02:39:59 CST 2019]; root of context hierarchy
+2019-03-24 02:40:02.436  INFO 79511 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-24 02:40:02.678  INFO 79511 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3078 ms
+2019-03-24 02:40:02.850  INFO 79511 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-24 02:40:02.860  INFO 79511 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-24 02:40:02.861  INFO 79511 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-24 02:40:02.861  INFO 79511 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-24 02:40:02.861  INFO 79511 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-24 02:40:04.715  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:40:04.717  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.717  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.718  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 02:40:04.718  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 02:40:04.721  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 02:40:04.721  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.723  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.724  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.725  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:40:04.725  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.726  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 02:40:04.732  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.732  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:40:04.733  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:40:04.733  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:40:04.734  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:40:04.735  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.736  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 02:40:04.736  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 02:40:04.737  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.738  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.739  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.739  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 02:40:04.740  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 02:40:04.740  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:40:04.741  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.741  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.744  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2019-03-24 02:40:04.745  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.746  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2019-03-24 02:40:04.746  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2019-03-24 02:40:04.747  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2019-03-24 02:40:04.747  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:40:04.749  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 02:40:04.749  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.750  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.750  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.750  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.751  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.751  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 02:40:04.752  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 02:40:04.753  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 02:40:04.754  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:40:04.756  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.759  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2019-03-24 02:40:04.765  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-24 02:40:04.766  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-24 02:40:04.767  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-24 02:40:04.771  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-24 02:40:04.771  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-24 02:40:04.958  INFO 79511 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-24 02:40:05.120  INFO 79511 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:40:05.387  INFO 79511 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35cabb2a: startup date [Sun Mar 24 02:39:59 CST 2019]; root of context hierarchy
+2019-03-24 02:40:05.468  INFO 79511 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:40:05.468  INFO 79511 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:40:05.484  INFO 79511 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2019-03-24 02:40:05.845  INFO 79511 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-24 02:40:05.863  INFO 79511 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-03-24 02:40:05.863  INFO 79511 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-24 02:40:05.929  INFO 79511 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-24 02:40:06.052  INFO 79511 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-24 02:40:06.464  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2019-03-24 02:40:06.467  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2019-03-24 02:40:06.601  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2019-03-24 02:40:06.604  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2019-03-24 02:40:06.612  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2019-03-24 02:40:06.615  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2019-03-24 02:40:06.617  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2019-03-24 02:40:06.620  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2019-03-24 02:40:06.648  INFO 79511 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2019-03-24 02:40:06.763  INFO 79511 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-24 02:40:20.373  INFO 79511 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-24 02:40:20.403  INFO 79511 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-03-24 02:55:39.214  INFO 79641 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a93b025: startup date [Sun Mar 24 02:55:39 CST 2019]; root of context hierarchy
+2019-03-24 02:55:42.029  INFO 79641 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-24 02:55:42.179  INFO 79641 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2966 ms
+2019-03-24 02:55:42.355  INFO 79641 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-24 02:55:42.362  INFO 79641 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-24 02:55:42.362  INFO 79641 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-24 02:55:42.363  INFO 79641 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-24 02:55:42.363  INFO 79641 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-24 02:55:43.826  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:55:43.828  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.829  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.830  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 02:55:43.832  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 02:55:43.838  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 02:55:43.839  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 02:55:43.839  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:55:43.840  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.841  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.842  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.843  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.852  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:55:43.852  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:55:43.853  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:55:43.853  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:55:43.854  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.856  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.856  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 02:55:43.858  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 02:55:43.860  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.867  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.868  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.869  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 02:55:43.870  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 02:55:43.873  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:55:43.873  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.874  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.875  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2019-03-24 02:55:43.876  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.876  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2019-03-24 02:55:43.877  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2019-03-24 02:55:43.878  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2019-03-24 02:55:43.890  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:55:43.894  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 02:55:43.895  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 02:55:43.896  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.896  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.897  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.897  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.898  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.899  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 02:55:43.900  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 02:55:43.901  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:55:43.902  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.902  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2019-03-24 02:55:43.911  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-24 02:55:43.913  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-24 02:55:43.914  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-24 02:55:43.919  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-24 02:55:43.921  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-24 02:55:44.245  INFO 79641 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-24 02:55:44.493  INFO 79641 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:55:44.766  INFO 79641 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a93b025: startup date [Sun Mar 24 02:55:39 CST 2019]; root of context hierarchy
+2019-03-24 02:55:44.818  INFO 79641 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:55:44.818  INFO 79641 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:55:44.837  INFO 79641 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2019-03-24 02:55:45.202  INFO 79641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-24 02:55:45.216  INFO 79641 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-03-24 02:55:45.216  INFO 79641 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-24 02:55:45.243  INFO 79641 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-24 02:55:45.328  INFO 79641 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-24 02:55:45.727  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2019-03-24 02:55:45.729  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2019-03-24 02:55:45.859  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2019-03-24 02:55:45.862  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2019-03-24 02:55:45.869  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2019-03-24 02:55:45.872  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2019-03-24 02:55:45.874  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2019-03-24 02:55:45.877  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2019-03-24 02:55:45.879  INFO 79641 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2019-03-24 02:55:45.932 ERROR 79641 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.apache.dubbo.admin.DubboAdminApplication.main(DubboAdminApplication.java:31)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+
+2019-03-24 02:55:45.984  INFO 79641 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-24 02:55:45.996 ERROR 79641 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-03-24 02:55:45.999  INFO 79641 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a93b025: startup date [Sun Mar 24 02:55:39 CST 2019]; root of context hierarchy
+2019-03-24 02:55:46.006  INFO 79641 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-03-24 02:55:46.010  INFO 79641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-24 02:56:46.150  INFO 79653 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b84fcf8: startup date [Sun Mar 24 02:56:46 CST 2019]; root of context hierarchy
+2019-03-24 02:56:48.946  INFO 79653 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-24 02:56:49.180  INFO 79653 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3031 ms
+2019-03-24 02:56:49.372  INFO 79653 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-24 02:56:49.378  INFO 79653 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-24 02:56:49.379  INFO 79653 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-24 02:56:49.379  INFO 79653 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-24 02:56:49.379  INFO 79653 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-24 02:56:50.866  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:56:50.867  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.867  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.869  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 02:56:50.869  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 02:56:50.872  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 02:56:50.873  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 02:56:50.873  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:56:50.874  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.874  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.874  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.875  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.885  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:56:50.886  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:56:50.887  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:56:50.888  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 02:56:50.888  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.890  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.891  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 02:56:50.891  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 02:56:50.892  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.893  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.894  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.894  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 02:56:50.895  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 02:56:50.897  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:56:50.897  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.898  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.900  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2019-03-24 02:56:50.901  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.901  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2019-03-24 02:56:50.902  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2019-03-24 02:56:50.903  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2019-03-24 02:56:50.903  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:56:50.905  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 02:56:50.905  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 02:56:50.906  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.906  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.906  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.907  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.907  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.908  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 02:56:50.909  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 02:56:50.910  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 02:56:50.910  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.910  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2019-03-24 02:56:50.916  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-24 02:56:50.917  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-24 02:56:50.918  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-24 02:56:50.922  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-24 02:56:50.924  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-24 02:56:51.267  INFO 79653 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-24 02:56:51.406  INFO 79653 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:56:51.693  INFO 79653 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b84fcf8: startup date [Sun Mar 24 02:56:46 CST 2019]; root of context hierarchy
+2019-03-24 02:56:51.782  INFO 79653 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:56:51.782  INFO 79653 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 02:56:51.811  INFO 79653 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2019-03-24 02:56:52.297  INFO 79653 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-24 02:56:52.317  INFO 79653 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-03-24 02:56:52.318  INFO 79653 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-24 02:56:52.354  INFO 79653 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-24 02:56:52.481  INFO 79653 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-24 02:56:52.894  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2019-03-24 02:56:52.896  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2019-03-24 02:56:53.030  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2019-03-24 02:56:53.033  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2019-03-24 02:56:53.039  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2019-03-24 02:56:53.042  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2019-03-24 02:56:53.044  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2019-03-24 02:56:53.048  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2019-03-24 02:56:53.050  INFO 79653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2019-03-24 02:56:53.109 ERROR 79653 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.apache.dubbo.admin.DubboAdminApplication.main(DubboAdminApplication.java:31)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+
+2019-03-24 02:56:53.157  INFO 79653 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-24 02:56:53.172 ERROR 79653 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-03-24 02:56:53.205  INFO 79653 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b84fcf8: startup date [Sun Mar 24 02:56:46 CST 2019]; root of context hierarchy
+2019-03-24 02:56:53.212  INFO 79653 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-03-24 02:56:53.217  INFO 79653 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-24 03:04:34.620  INFO 79777 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1189dd52: startup date [Sun Mar 24 03:04:34 CST 2019]; root of context hierarchy
+2019-03-24 03:04:36.646  INFO 79777 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-24 03:04:36.783  INFO 79777 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2164 ms
+2019-03-24 03:04:36.918  INFO 79777 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-24 03:04:36.923  INFO 79777 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-24 03:04:36.923  INFO 79777 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-24 03:04:36.923  INFO 79777 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-24 03:04:36.923  INFO 79777 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-24 03:04:37.935  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:04:37.936  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.937  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.938  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 03:04:37.938  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 03:04:37.941  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 03:04:37.941  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 03:04:37.942  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:04:37.942  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.942  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.943  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.943  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.948  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:04:37.948  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:04:37.949  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:04:37.949  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:04:37.949  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.951  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.951  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 03:04:37.951  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 03:04:37.952  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.953  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 03:04:37.954  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 03:04:37.954  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:04:37.954  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.955  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.955  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.956  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.957  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2019-03-24 03:04:37.958  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.958  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2019-03-24 03:04:37.958  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2019-03-24 03:04:37.959  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2019-03-24 03:04:37.960  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:04:37.961  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 03:04:37.962  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 03:04:37.962  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.963  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.963  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.963  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.964  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.965  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 03:04:37.965  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 03:04:37.966  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:04:37.966  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.967  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2019-03-24 03:04:37.971  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-24 03:04:37.973  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-24 03:04:37.974  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-24 03:04:37.977  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-24 03:04:37.978  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-24 03:04:38.139  INFO 79777 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-24 03:04:38.339  INFO 79777 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:04:38.547  INFO 79777 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1189dd52: startup date [Sun Mar 24 03:04:34 CST 2019]; root of context hierarchy
+2019-03-24 03:04:38.605  INFO 79777 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:04:38.605  INFO 79777 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:04:38.635  INFO 79777 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2019-03-24 03:04:38.930  INFO 79777 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-24 03:04:38.945  INFO 79777 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-03-24 03:04:38.946  INFO 79777 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-24 03:04:38.965  INFO 79777 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-24 03:04:39.046  INFO 79777 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-24 03:04:39.316  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2019-03-24 03:04:39.319  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2019-03-24 03:04:39.621  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2019-03-24 03:04:39.626  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2019-03-24 03:04:39.635  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2019-03-24 03:04:39.640  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2019-03-24 03:04:39.642  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2019-03-24 03:04:39.646  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2019-03-24 03:04:39.652  INFO 79777 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2019-03-24 03:04:39.752 ERROR 79777 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.apache.dubbo.admin.DubboAdminApplication.main(DubboAdminApplication.java:31)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+
+2019-03-24 03:04:39.777  INFO 79777 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-24 03:04:39.785 ERROR 79777 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-03-24 03:04:39.788  INFO 79777 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1189dd52: startup date [Sun Mar 24 03:04:34 CST 2019]; root of context hierarchy
+2019-03-24 03:04:39.793  INFO 79777 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-03-24 03:04:39.794  INFO 79777 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-24 03:06:15.113  INFO 79804 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79e2c065: startup date [Sun Mar 24 03:06:15 CST 2019]; root of context hierarchy
+2019-03-24 03:06:17.094  INFO 79804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-24 03:06:17.228  INFO 79804 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2116 ms
+2019-03-24 03:06:17.421  INFO 79804 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-24 03:06:17.432  INFO 79804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-24 03:06:17.433  INFO 79804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-24 03:06:17.433  INFO 79804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-24 03:06:17.433  INFO 79804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-24 03:06:18.553  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:06:18.554  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.555  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.556  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 03:06:18.557  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 03:06:18.561  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 03:06:18.562  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 03:06:18.563  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:06:18.563  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.564  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.564  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.564  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.571  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:06:18.572  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:06:18.573  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:06:18.573  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:06:18.574  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.575  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.576  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 03:06:18.576  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 03:06:18.577  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.579  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.580  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.581  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 03:06:18.581  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 03:06:18.582  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:06:18.583  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.583  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.585  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2019-03-24 03:06:18.586  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.586  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2019-03-24 03:06:18.587  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2019-03-24 03:06:18.588  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2019-03-24 03:06:18.588  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:06:18.590  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 03:06:18.590  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 03:06:18.591  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.591  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.592  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.592  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.592  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.594  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 03:06:18.594  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 03:06:18.595  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:06:18.595  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.596  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2019-03-24 03:06:18.603  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-24 03:06:18.605  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-24 03:06:18.606  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-24 03:06:18.610  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-24 03:06:18.610  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-24 03:06:18.756  INFO 79804 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-24 03:06:18.908  INFO 79804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:06:19.136  INFO 79804 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79e2c065: startup date [Sun Mar 24 03:06:15 CST 2019]; root of context hierarchy
+2019-03-24 03:06:19.189  INFO 79804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:06:19.189  INFO 79804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:06:19.212  INFO 79804 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2019-03-24 03:06:19.532  INFO 79804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-24 03:06:19.546  INFO 79804 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-03-24 03:06:19.547  INFO 79804 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-24 03:06:19.567  INFO 79804 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-24 03:06:19.648  INFO 79804 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-24 03:06:19.926  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2019-03-24 03:06:19.928  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2019-03-24 03:06:20.044  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2019-03-24 03:06:20.047  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2019-03-24 03:06:20.054  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2019-03-24 03:06:20.056  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2019-03-24 03:06:20.059  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2019-03-24 03:06:20.061  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2019-03-24 03:06:20.063  INFO 79804 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2019-03-24 03:06:20.125 ERROR 79804 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.apache.dubbo.admin.DubboAdminApplication.main(DubboAdminApplication.java:31)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+
+2019-03-24 03:06:20.182  INFO 79804 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-24 03:06:20.201 ERROR 79804 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-03-24 03:06:20.203  INFO 79804 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79e2c065: startup date [Sun Mar 24 03:06:15 CST 2019]; root of context hierarchy
+2019-03-24 03:06:20.210  INFO 79804 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-03-24 03:06:20.214  INFO 79804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-24 03:08:38.300  INFO 79872 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36bc55de: startup date [Sun Mar 24 03:08:38 CST 2019]; root of context hierarchy
+2019-03-24 03:08:40.321  INFO 79872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-24 03:08:40.466  INFO 79872 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2166 ms
+2019-03-24 03:08:40.611  INFO 79872 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-24 03:08:40.615  INFO 79872 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-24 03:08:40.616  INFO 79872 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-24 03:08:40.616  INFO 79872 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-24 03:08:40.616  INFO 79872 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-24 03:08:41.674  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.AccessDTO> org.apache.dubbo.admin.controller.AccessesController.searchAccess(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:08:41.676  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.AccessDTO org.apache.dubbo.admin.controller.AccessesController.detailAccess(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.676  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[DELETE]}" onto public void org.apache.dubbo.admin.controller.AccessesController.deleteAccess(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.679  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access],methods=[POST]}" onto public void org.apache.dubbo.admin.controller.AccessesController.createAccess(org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 03:08:41.680  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/access/{id}],methods=[PUT]}" onto public void org.apache.dubbo.admin.controller.AccessesController.updateAccess(java.lang.String,org.apache.dubbo.admin.model.dto.AccessDTO,java.lang.String)
+2019-03-24 03:08:41.684  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.createRule(org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 03:08:41.685  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.ConditionRouteDTO,java.lang.String)
+2019-03-24 03:08:41.686  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConditionRouteDTO> org.apache.dubbo.admin.controller.ConditionRoutesController.searchRoutes(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:08:41.686  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ConditionRouteDTO org.apache.dubbo.admin.controller.ConditionRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.687  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.687  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.688  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/condition/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ConditionRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.693  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.createLoadbalance(org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:08:41.694  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.updateLoadbalance(java.lang.String,org.apache.dubbo.admin.model.dto.BalancingDTO,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:08:41.695  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.BalancingDTO> org.apache.dubbo.admin.controller.LoadBalanceController.searchLoadbalances(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:08:41.695  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.BalancingDTO org.apache.dubbo.admin.controller.LoadBalanceController.detailLoadBalance(java.lang.String,java.lang.String) throws org.apache.dubbo.admin.common.exception.ParamValidationException
+2019-03-24 03:08:41.696  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/balancing/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.LoadBalanceController.deleteLoadBalance(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.698  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.ConfigDTO> org.apache.dubbo.admin.controller.ManagementController.getConfig(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.699  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.updateConfig(java.lang.String,org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 03:08:41.699  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.createConfig(org.apache.dubbo.admin.model.dto.ConfigDTO,java.lang.String)
+2019-03-24 03:08:41.700  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/manage/config/{key}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.ManagementController.deleteConfig(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.703  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.createOverride(org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 03:08:41.704  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.updateOverride(java.lang.String,org.apache.dubbo.admin.model.dto.DynamicConfigDTO,java.lang.String)
+2019-03-24 03:08:41.705  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.DynamicConfigDTO> org.apache.dubbo.admin.controller.OverridesController.searchOverride(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:08:41.705  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.DynamicConfigDTO org.apache.dubbo.admin.controller.OverridesController.detailOverride(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.706  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.deleteOverride(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.707  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.708  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/override/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.OverridesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.710  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service],methods=[GET]}" onto public org.springframework.data.domain.Page<org.apache.dubbo.admin.model.dto.ServiceDTO> org.apache.dubbo.admin.controller.ServiceController.searchService(java.lang.String,java.lang.String,java.lang.String,org.springframework.data.domain.Pageable)
+2019-03-24 03:08:41.711  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/service/{service}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.ServiceDetailDTO org.apache.dubbo.admin.controller.ServiceController.serviceDetail(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.711  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/services],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allServices(java.lang.String)
+2019-03-24 03:08:41.712  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/applications],methods=[GET]}" onto public java.util.Set<java.lang.String> org.apache.dubbo.admin.controller.ServiceController.allApplications(java.lang.String)
+2019-03-24 03:08:41.713  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test],methods=[POST]}" onto public java.lang.Object org.apache.dubbo.admin.controller.ServiceTestController.test(java.lang.String,org.apache.dubbo.admin.model.dto.ServiceTestDTO)
+2019-03-24 03:08:41.714  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/test/method],methods=[GET]}" onto public org.apache.dubbo.admin.model.domain.MethodMetadata org.apache.dubbo.admin.controller.ServiceTestController.methodDetail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:08:41.716  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.createRule(org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 03:08:41.717  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.updateRule(java.lang.String,org.apache.dubbo.admin.model.dto.TagRouteDTO,java.lang.String)
+2019-03-24 03:08:41.717  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.TagRouteDTO> org.apache.dubbo.admin.controller.TagRoutesController.searchRoutes(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.718  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.TagRouteDTO org.apache.dubbo.admin.controller.TagRoutesController.detailRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.718  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.deleteRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.718  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/enable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.enableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.719  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/route/tag/disable/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.TagRoutesController.disableRoute(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.720  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[POST]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.createWeight(org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 03:08:41.721  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[PUT]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.updateWeight(java.lang.String,org.apache.dubbo.admin.model.dto.WeightDTO,java.lang.String)
+2019-03-24 03:08:41.722  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight],methods=[GET]}" onto public java.util.List<org.apache.dubbo.admin.model.dto.WeightDTO> org.apache.dubbo.admin.controller.WeightController.searchWeight(java.lang.String,java.lang.String,java.lang.String)
+2019-03-24 03:08:41.722  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[GET]}" onto public org.apache.dubbo.admin.model.dto.WeightDTO org.apache.dubbo.admin.controller.WeightController.detailWeight(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.723  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/{env}/rules/weight/{id}],methods=[DELETE]}" onto public boolean org.apache.dubbo.admin.controller.WeightController.deleteWeight(java.lang.String,java.lang.String)
+2019-03-24 03:08:41.730  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-24 03:08:41.732  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-24 03:08:41.733  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-24 03:08:41.738  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-24 03:08:41.739  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-24 03:08:41.913  INFO 79872 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-24 03:08:42.053  INFO 79872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:08:42.274  INFO 79872 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36bc55de: startup date [Sun Mar 24 03:08:38 CST 2019]; root of context hierarchy
+2019-03-24 03:08:42.324  INFO 79872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:08:42.324  INFO 79872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-24 03:08:42.353  INFO 79872 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customExceptionHandler
+2019-03-24 03:08:42.657  INFO 79872 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-24 03:08:42.671  INFO 79872 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-03-24 03:08:42.671  INFO 79872 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-24 03:08:42.693  INFO 79872 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-24 03:08:42.777  INFO 79872 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-24 03:08:43.090  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_1
+2019-03-24 03:08:43.092  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_1
+2019-03-24 03:08:43.219  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createRuleUsingPOST_1
+2019-03-24 03:08:43.220  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRouteUsingDELETE_1
+2019-03-24 03:08:43.224  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailRouteUsingGET_1
+2019-03-24 03:08:43.226  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: disableRouteUsingPUT_2
+2019-03-24 03:08:43.228  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: enableRouteUsingPUT_2
+2019-03-24 03:08:43.230  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchRoutesUsingGET_1
+2019-03-24 03:08:43.232  INFO 79872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRuleUsingPUT_1
+2019-03-24 03:08:43.271 ERROR 79872 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.apache.dubbo.admin.DubboAdminApplication.main(DubboAdminApplication.java:31)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+
+2019-03-24 03:08:43.288  INFO 79872 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-24 03:08:43.296 ERROR 79872 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-03-24 03:08:43.297  INFO 79872 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36bc55de: startup date [Sun Mar 24 03:08:38 CST 2019]; root of context hierarchy
+2019-03-24 03:08:43.301  INFO 79872 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-03-24 03:08:43.303  INFO 79872 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
